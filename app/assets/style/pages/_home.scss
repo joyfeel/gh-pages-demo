@@ -1,5 +1,5 @@
 .banner {
-	background-image: url('../../../assets/images/week3/banner.png');
+	background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -101,7 +101,7 @@
 }
 
 .partnership {
-	background-image: url('../../../assets/images/week3/bg.png');
+	background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -308,7 +308,7 @@
 
 @include pad {
 	.banner {
-		background-image: url('../../../assets/images/week3/banner-sm.png');
+		background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png');
 
 		&__title {
 			font-size: 20px;
@@ -427,7 +427,7 @@
 
 @include mobile {
 	.banner {
-		background-image: url('../../../assets/images/week3/banner-sm.png');
+		background-image: url('https://hexschool.github.io/webLayoutTraining1st/week3/banner-sm.png');
 		background-position: 0;
 		height: 394px;
 
