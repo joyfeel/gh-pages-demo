@@ -1,0 +1,21 @@
+.container {
+	// (1110 + 30 gutter), padding = gutter / 2
+	max-width: calc(1110px + 30px);
+	margin: 0 auto;
+	padding: 0 15px;
+
+	padding-top: 60px;
+	padding-bottom: 80px;
+
+	@include pad {
+		max-width: calc(690px + 30px);
+		padding-top: 40px;
+		padding-bottom: 56px;
+	}
+
+	@include mobile {
+		max-width: calc(345px + 30px);
+		padding-top: 32px;
+		padding-bottom: 40px;
+	}
+}

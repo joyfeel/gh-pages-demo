@@ -4,13 +4,13 @@
 
 ## 指令列表
 
-- `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
-  - 若沒有自動開啟瀏覽器則可手動在瀏覽器上輸入 `http://localhost:8080/` 即可。
-  - 假使監聽功能無效的話，可以檢查一下是否修改到資料夾的名稱等。
-- `gulp build` - 執行編譯模式(不會開啟瀏覽器)
-- `gulp clean` - 清除 dist 資料夾
-- `gulp deploy` - 將 dist 資料夾部署至 GitHub Pages
-  - 若無法部署到 GitHub Pages 的話，可以確定一下是否已經初始化專案等。
+-   `gulp` - 執行開發模式(會開啟模擬瀏覽器並監聽相關檔案)
+    -   若沒有自動開啟瀏覽器則可手動在瀏覽器上輸入 `http://localhost:8080/` 即可。
+    -   假使監聽功能無效的話，可以檢查一下是否修改到資料夾的名稱等。
+-   `gulp build` - 執行編譯模式(不會開啟瀏覽器)
+-   `gulp clean` - 清除 dist 資料夾
+-   `gulp deploy` - 將 dist 資料夾部署至 GitHub Pages
+    -   若無法部署到 GitHub Pages 的話，可以確定一下是否已經初始化專案等。
 
 > 請務必確保已經在本機上輸入過 `npm install -g gulp`，否則電腦會不認識 `gulp` 指令哦。
 
@@ -24,16 +24,16 @@
 
 ## 資料夾結構
 
-- App # 原始碼
-  - assets # 靜態資源放置處
-    - images # 圖片放置處
-    - js # JavaScript 放置處
-    - style # 樣式放置處
-  - index.html # 首頁 HTML
-  - layout.ejs # Layout ejs
-- gulpfile.js # Gulp 原始碼
-  - envOptions.js # Gulp 路徑變數
-  - index.js # Gulp 核心原始碼
+-   App # 原始碼
+    -   assets # 靜態資源放置處
+        -   images # 圖片放置處
+        -   js # JavaScript 放置處
+        -   style # 樣式放置處
+    -   index.html # 首頁 HTML
+    -   layout.ejs # Layout ejs
+-   gulpfile.js # Gulp 原始碼
+    -   envOptions.js # Gulp 路徑變數
+    -   index.js # Gulp 核心原始碼
 
 ### 注意事項
 
@@ -91,11 +91,11 @@ Q: 其他可能的問題且無法部署到 GitHub Pages。
 
 A: 這邊問題有許多種，因此在排除上可能會比較麻煩，需要多一點耐心。
 
-- 可能沒有針對 GitHub 專案做第一次的初始化部署。
-- 電腦可能沒有安裝 Git(可以執行一下 `git --version` 確保有出現版本號)。
-- 忘記執行 `npm install`
-- 對於終端機的 Git 操作不熟悉(可以考慮使用 GitHub Desktop 來操作會較為方便)。
-- 出現「`not a git repository`」(主要是缺少了 `git init` 將目前專案初始化 Git)
+-   可能沒有針對 GitHub 專案做第一次的初始化部署。
+-   電腦可能沒有安裝 Git(可以執行一下 `git --version` 確保有出現版本號)。
+-   忘記執行 `npm install`
+-   對於終端機的 Git 操作不熟悉(可以考慮使用 GitHub Desktop 來操作會較為方便)。
+-   出現「`not a git repository`」(主要是缺少了 `git init` 將目前專案初始化 Git)
 
 Q: 執行 `gulp` 之後瀏覽器沒有自動開啟。
 
@@ -111,20 +111,20 @@ Q: 以上問題都無法解決
 
 A: 建議可以查看一下自己的相關版本，以下是專案開發者的運行環境
 
-- Node v12.18.2
-  - 實際測試 Node 12~14 都是可以運行的
-  - 查看自己版本指令：`node -v`
-- Gulp
-  - CLI version: 2.3.0
-  - Local version: 4.0.2
-  - 查看自己版本指令：`gulp -v`
-- git version 2.23.0
-  - 查看自己版本指令：`git ---version`
+-   Node v12.18.2
+    -   實際測試 Node 12~14 都是可以運行的
+    -   查看自己版本指令：`node -v`
+-   Gulp
+    -   CLI version: 2.3.0
+    -   Local version: 4.0.2
+    -   查看自己版本指令：`gulp -v`
+-   git version 2.23.0
+    -   查看自己版本指令：`git ---version`
 
 ## 學習資源
 
 若對於 Gulp 有一定興趣的話，以下這邊提供學習資源
 
-- [使用 Gulp 進行網頁前端自動化](https://courses.hexschool.com/p/gulp)
-- [這是在講 Gulp 不是飲料是任務自動化工具這件事](https://hsiangfeng.github.io/tags/%E9%80%99%E6%98%AF%E5%9C%A8%E8%AC%9B-Gulp-%E4%B8%8D%E6%98%AF%E9%A3%B2%E6%96%99%E6%98%AF%E4%BB%BB%E5%8B%99%E8%87%AA%E5%8B%95%E5%8C%96%E5%B7%A5%E5%85%B7%E9%80%99%E4%BB%B6%E4%BA%8B/page/2/)
-- [試著把切版專案升級到 gulp4.0 吧](https://ithelp.ithome.com.tw/users/20104132/ironman/2921)
+-   [使用 Gulp 進行網頁前端自動化](https://courses.hexschool.com/p/gulp)
+-   [這是在講 Gulp 不是飲料是任務自動化工具這件事](https://hsiangfeng.github.io/tags/%E9%80%99%E6%98%AF%E5%9C%A8%E8%AC%9B-Gulp-%E4%B8%8D%E6%98%AF%E9%A3%B2%E6%96%99%E6%98%AF%E4%BB%BB%E5%8B%99%E8%87%AA%E5%8B%95%E5%8C%96%E5%B7%A5%E5%85%B7%E9%80%99%E4%BB%B6%E4%BA%8B/page/2/)
+-   [試著把切版專案升級到 gulp4.0 吧](https://ithelp.ithome.com.tw/users/20104132/ironman/2921)

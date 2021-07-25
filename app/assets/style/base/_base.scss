@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Microsoft JhengHei', Roboto, 'Helvetica Neue', Arial, sans-serif;
+
+	line-height: 1.5;
+	font-size: 16px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+.text-primary {
+	color: $cl-primary;
+}
+
+.text-secondary {
+	background-color: #fff;
+}
+
+.bg-primary {
+	background-color: $cl-primary;
+}
+
+.bg-secondary {
+	color: #fff;
+}
+
+.text-fantasy {
+	color: $fantasy;
+}
+
+.text-white {
+	color: #fff;
+}
+
+.text-fantasy {
+	color: $fantasy;
+}
+
+.text-bunker {
+	color: $bunker;
+}
+
+.text-bright-red {
+	color: $bright-red;
+}
+
+.text-lonestar {
+	color: $lonestar;
+}
+
+.bg-fantasy {
+	background-color: $fantasy;
+}
+
+.bg-bunker {
+	background-color: $bunker;
+}
+
+.bg-bright-red {
+	background-color: $bright-red;
+}
+
+.bg-lonestar {
+	background-color: $lonestar;
+}
+
+.mb-32 {
+	margin-bottom: 32px;
+}
+
+.section-title {
+	text-align: center;
+	font-size: 48px;
+	font-weight: bold;
+	margin-bottom: 40px;
+}
+
+@include pad {
+	.section-title {
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
+}
+
+@include mobile {
+	.section-title {
+		font-size: 24px;
+		margin-bottom: 20px;
+	}
+}
