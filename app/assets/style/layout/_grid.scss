@@ -19,32 +19,3 @@
 		padding-bottom: 40px;
 	}
 }
-
-// .container {
-// 	// (1110 + 30 gutter), padding = gutter / 2
-// 	max-width: calc(1110px + 30px);
-// 	margin: 0 auto;
-// 	padding: 60px 15px 80px;
-// 	// padding: 60px 0 80px;
-
-// 	@include desktop {
-// 		max-width: 992px;
-// 		padding: 40px 0 56px;
-// 	}
-
-// 	@include pad {
-// 		max-width: 768px;
-// 		// padding: 40px 0 56px;
-// 		padding: 32px 15px 40px;
-// 	}
-
-// 	@include mobile {
-// 		// padding: 40px 0 56px;
-// 		max-width: 568px;
-// 	}
-
-// 	// @include iphone {
-// 	// 	padding-left: 15px;
-// 	// 	padding-right: 15px;
-// 	// }
-// }
