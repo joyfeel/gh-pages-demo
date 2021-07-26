@@ -4,8 +4,22 @@
 @import 'base/reset';
 @import 'base/base';
 
+@import 'utilities/color';
+@import 'utilities/font';
+@import 'utilities/text';
+
 @import 'layout/grid';
 @import 'layout/header';
 @import 'layout/footer';
+@import 'layout/campaign';
+@import 'layout/category';
+@import 'layout/location';
+@import 'layout/location-detail';
+
+@import 'components/tabs';
+@import 'components/pagination';
+@import 'components/product';
+@import 'components/office';
 
 @import 'pages/home';
+@import 'pages/optical';

@@ -1,0 +1,82 @@
+.pagination {
+	text-align: center;
+
+	> .container {
+		padding-top: 0;
+		padding-bottom: 160px;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__link {
+		display: block;
+		text-decoration: none;
+		word-break: keep-all;
+		color: #555;
+		font-size: 18px;
+		padding: 10px 16px;
+
+		border: 1px solid #555;
+		border-right: none;
+
+		&:hover {
+			background-color: #f2f2f2;
+		}
+
+		&--next {
+			border-right: 1px solid #555;
+		}
+
+		&--previos,
+		&--next {
+			padding-right: 12px;
+			padding-left: 12px;
+		}
+
+		&--active {
+			background-color: #000;
+			color: #fff;
+
+			&:hover {
+				background-color: #000;
+			}
+		}
+
+		&--disabled {
+			cursor: default;
+			pointer-events: none;
+		}
+	}
+}
+
+@include pad {
+	.pagination {
+		> .container {
+			padding-bottom: 96px;
+		}
+	}
+}
+
+@include mobile {
+	.pagination {
+		> .container {
+			padding-bottom: 56px;
+		}
+	}
+}
+
+@include iphone6Plus {
+	.pagination {
+		&__item {
+			display: none;
+
+			&--previous,
+			&--next {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,0 +1,98 @@
+---
+title: Location
+layout: ./app/layout.ejs
+engine: ejs
+current: location
+---
+
+<section class="location">
+	<div class="container">
+		<h1 class="internal-title">門市據點</h1>
+
+		<div class="select-group">
+			<label for="location" class="select-group__label">選擇分店</label>
+			<select name="cars" id="location" class="select-group__select">
+				<option value="%">請選擇分店</option>
+				<option value="台北中山旗艦店" selected="selected"
+					>台北中山旗艦店</option
+				>
+				<option value="台中市政旗艦店">台中市政旗艦店</option>
+				<option value="高雄市三民旗艦店">高雄市三民旗艦店</option>
+			</select>
+		</div>
+
+		<div class="location-detail">
+			<div class="location-detail__office office">
+				<div class="location-detail__photo">
+					<div class="office__aside">
+						<img
+							src="https://hexschool.github.io/webLayoutTraining1st/week3/locate1.jpeg"
+							alt="台北中山旗艦店"
+							title="台北中山旗艦店"
+							class="office__image"
+						/>
+					</div>
+				</div>
+
+				<div class="location-detail__information">
+					<div class="office__header">
+						<h3 class="office__title">台北中山旗艦店</h3>
+					</div>
+
+					<ul class="office__body">
+						<li class="office__contact">
+							<img
+								src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg"
+								alt="office icon"
+								class="office__icon"
+							/>
+
+							<a href="tel:+0800-000-000" class="office__text"
+								>電話: (02)000-1234</a
+							>
+						</li>
+						<li class="office__contact">
+							<img
+								src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg"
+								alt=""
+								class="office__icon"
+							/>
+							<p class="office__text">
+								營業時間:
+								<time>10:00</time>
+								-
+								<time>21:00</time>
+							</p>
+						</li>
+
+						<li class="office__contact">
+							<img
+								src="https://hexschool.github.io/webLayoutTraining1st/week3/icon-clock-black.svg"
+								alt=""
+								class="office__icon"
+							/>
+							<address class="office__text">
+								地址: 台北市中山區南京東路
+							</address>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="location-detail__map">
+				<!-- google-map-generator -->
+				<div style="width: 100%">
+					<iframe
+						width="100%"
+						height="422"
+						frameborder="0"
+						scrolling="no"
+						marginheight="0"
+						marginwidth="0"
+						src="https://maps.google.com/maps?width=100%25&amp;height=422&amp;hl=en&amp;q=%E5%9C%B0%E5%9D%80%EF%BC%9A%E5%8F%B0%E5%8C%97%E5%B8%82%E4%B8%AD%E5%B1%B1%E5%8D%80%E5%8D%97%E4%BA%AC%E6%9D%B1%E8%B7%AF25%E5%B7%B72-1%E8%99%9F+(%E5%8F%B0%E5%8C%97%E4%B8%AD%E5%B1%B1%E6%97%97%E8%89%A6%E5%BA%97)&amp;t=&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+					></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

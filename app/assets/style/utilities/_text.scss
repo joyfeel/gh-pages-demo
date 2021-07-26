@@ -1,0 +1,23 @@
+.internal-title {
+	color: #000;
+	font-size: 48px;
+	font-weight: bold;
+	padding-left: 16px;
+	border-left: 8px solid $tamarillo;
+	margin-bottom: 60px;
+}
+
+@include pad {
+	.internal-title {
+		border-left-width: 4px;
+		margin-bottom: 40px;
+	}
+}
+
+@include mobile {
+	.internal-title {
+		padding-left: 8px;
+		font-size: 28px;
+		margin-bottom: 28px;
+	}
+}
