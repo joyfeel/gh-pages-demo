@@ -3,8 +3,52 @@ title: Blog
 layout: ./app/layout.ejs
 engine: ejs
 current: blog
+search_nav: true
 ---
 
-<section>
-	WIP
+<!-- <%- include header %> -->
+
+<section class="blog">
+	<div class="container">
+		<h1 class="internal-title">部落格</h1>
+	</div>
 </section>
+
+<div class="pagination">
+	<div class="container">
+		<ul class="pagination__list">
+			<li class="pagination__item pagination__item--previous">
+				<a href="#" class="pagination__link pagination__link--previous"
+					>上一頁</a
+				>
+			</li>
+
+			<li class="pagination__item">
+				<a href="#" class="pagination__link">1</a>
+			</li>
+			<li class="pagination__item">
+				<a
+					href="#"
+					class="pagination__link pagination__link--active pagination__link--disabled"
+					disabled="disabled"
+					>2</a
+				>
+			</li>
+			<li class="pagination__item">
+				<a href="#" class="pagination__link">3</a>
+			</li>
+			<li class="pagination__item">
+				<a href="#" class="pagination__link">4</a>
+			</li>
+			<li class="pagination__item">
+				<a href="#" class="pagination__link">5</a>
+			</li>
+
+			<li class="pagination__item pagination__item--next">
+				<a href="#" class="pagination__link pagination__link--next"
+					>下一頁</a
+				>
+			</li>
+		</ul>
+	</div>
+</div>

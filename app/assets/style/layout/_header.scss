@@ -8,12 +8,12 @@
 		align-items: center;
 	}
 
-	$link-padding-gap: 8px;
+	$link-padding-gap: 20px;
 
 	.main-nav {
 		&__list {
 			display: flex;
-			margin-left: $link-padding-gap;
+			margin-right: -$link-padding-gap;
 		}
 
 		&__item {
@@ -33,7 +33,7 @@
 			padding: 39px $link-padding-gap;
 
 			&:hover {
-				background-color: $iron;
+				background-color: $fantasy;
 				color: #000;
 			}
 		}
