@@ -1,16 +1,15 @@
-.office {
+.store {
 	&__aside {
 	}
 
 	&__image {
-		max-height: 224px;
+		height: 224px;
 		width: 100%;
 		object-fit: cover;
 	}
 
 	&__header {
 		border: 1px solid #00000020;
-		// border-top: none;
 	}
 
 	&__title {
@@ -20,14 +19,13 @@
 
 	&__body {
 		border: 1px solid #00000020;
-		// border-bottom: 0;
 		border-top: none;
 		padding: 16px 24px;
 	}
 
 	&__contact {
 		display: flex;
-		align-items: baseline;
+		align-items: flex-start;
 
 		margin-bottom: 8px;
 
@@ -37,8 +35,7 @@
 	}
 
 	&__icon {
-		width: 20px;
-		height: 20px;
+		font-size: 24px !important;
 		margin-right: 10px;
 	}
 
@@ -61,13 +58,13 @@
 		padding: 19px 0;
 
 		&:hover {
-			//TODO
+			background-color: $iron;
 		}
 	}
 }
 
 @include pad {
-	.office {
+	.store {
 		&__image {
 			height: 164px;
 		}

@@ -14,19 +14,6 @@
 	}
 }
 
-// @include pad {
-// 	.campaign {
-// 		&__list {
-// 		}
-
-// 		&__item {
-// 		}
-
-// 		&__image {
-// 		}
-// 	}
-// }
-
 @include mobile {
 	.campaign {
 		&__image {

@@ -2,7 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 
-	&__office {
+	&__store {
 		width: 41.66%;
 	}
 
@@ -17,7 +17,7 @@
 		flex-direction: column;
 		align-items: center;
 
-		&__office {
+		&__store {
 			width: 100%;
 			display: flex;
 			justify-content: space-between;
@@ -39,7 +39,7 @@
 
 @include mobile {
 	.location-detail {
-		&__office {
+		&__store {
 			flex-direction: column;
 		}
 

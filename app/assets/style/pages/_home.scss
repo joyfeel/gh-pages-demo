@@ -36,9 +36,9 @@
 		align-items: center;
 	}
 
-	&__image {
-		width: 100px;
-		height: 100px;
+	&__icon {
+		font-size: 100px !important;
+		color: $lonestar;
 		margin-bottom: 16px;
 	}
 
@@ -80,6 +80,11 @@
 		height: 320px;
 	}
 
+	&__icon {
+		font-size: 48px !important;
+		color: $bright-red;
+	}
+
 	&__body {
 		display: flex;
 		align-items: center;
@@ -116,6 +121,10 @@
 		width: calc((100% - 30px) / 2);
 	}
 
+	&__link {
+		display: block;
+	}
+
 	&__image {
 		object-fit: cover;
 		width: 100%;
@@ -135,6 +144,10 @@
 		align-items: center;
 
 		background: rgba(255, 255, 255, 0.5);
+
+		&:hover {
+			background-color: rgba(207, 210, 214, 0.5);
+		}
 	}
 
 	&__title {
@@ -153,12 +166,8 @@
 	&__card {
 		display: flex;
 		flex-direction: column;
-
 		width: calc((100% - 30px * 3) / 4);
-
 		border-radius: 4px;
-		border: 1px solid #dee2e6;
-		box-shadow: 0px 2px 6px #00000029;
 		overflow: hidden;
 	}
 
@@ -177,6 +186,9 @@
 		flex-direction: column;
 		justify-content: space-between;
 		height: auto;
+
+		border: 1px solid #dee2e6;
+		box-shadow: 0px 2px 6px #00000029;
 	}
 
 	&__name {
@@ -291,9 +303,10 @@
 		background-color: $bright-red;
 		color: #fff;
 		border: none;
+		cursor: pointer;
 
 		&:hover {
-			cursor: pointer;
+			background-color: $rosewood;
 		}
 	}
 }
@@ -345,6 +358,10 @@
 
 		&__image {
 			height: 168px;
+		}
+
+		&__icon {
+			font-size: 37px !important;
 		}
 
 		&__body {
@@ -515,6 +532,10 @@
 	.contact {
 		> .container {
 			max-width: calc(345px + 30px);
+		}
+
+		&__terms {
+			align-items: flex-start;
 		}
 
 		&__submit {
