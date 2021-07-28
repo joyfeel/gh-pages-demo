@@ -1505,7 +1505,9 @@ img {
         -ms-flex-pack: justify;
             justify-content: space-between; }
   .blog-card__header {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    text-decoration: none;
+    color: #000; }
   .blog-card__title {
     font-size: 32px;
     color: #650300;
