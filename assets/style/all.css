@@ -735,6 +735,10 @@ img {
   .breadcrumb__link {
     font-size: 14px; } }
 
+@media (max-width: 375px) {
+  .breadcrumb__link {
+    font-size: 12px; } }
+
 .hashtag-nav {
   margin-top: 8px; }
   .hashtag-nav > .container {
