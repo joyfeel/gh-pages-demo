@@ -83,8 +83,9 @@
 		&__text {
 			font-size: 14px;
 		}
-	}
-}
 
-@include mobile {
+		&__link {
+			padding: 12px 0;
+		}
+	}
 }
