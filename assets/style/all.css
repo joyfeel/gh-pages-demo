@@ -1111,7 +1111,7 @@ img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 256px; }
+  max-height: 256px; }
 
 .testimonial__body {
   padding: 16px;
