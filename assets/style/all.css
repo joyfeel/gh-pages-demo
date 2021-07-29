@@ -331,7 +331,8 @@ img {
     width: 100%; }
     .header .main-nav__list {
       -ms-flex-wrap: wrap;
-          flex-wrap: wrap; }
+          flex-wrap: wrap;
+      margin-right: 0; }
     .header .main-nav__item {
       margin-left: initial;
       width: 50%; }
