@@ -1,0 +1,43 @@
+.breadcrumb {
+	margin-top: 8px;
+
+	> .container {
+		padding-top: 8px;
+		padding-bottom: 0;
+	}
+
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		& + &:before {
+			display: inline-block;
+			content: '/';
+			padding: 0 6px;
+			color: #000;
+		}
+	}
+
+	&__link {
+		color: #000;
+		text-decoration: none;
+
+		&--active {
+			color: $bright-red;
+			pointer-events: none;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+@include pad {
+	.breadcrumb {
+		&__link {
+			font-size: 14px;
+		}
+	}
+}

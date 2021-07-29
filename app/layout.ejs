@@ -26,15 +26,24 @@
 	</head>
 
 	<body>
+		<!-- Header -->
 		<%- include('partials/header') %>
-		<!--  -->
+		<!-- Search Navigation -->
 		<% if (typeof search_nav != 'undefined') { %> <%-
 		include('partials/search-nav'); %> <% } %>
-		<!--  -->
+		<!-- Breadcrumb -->
+		<% if (typeof breadcrumb != 'undefined') { %> <%-
+		include('partials/breadcrumb'); %> <% } %>
+		<!-- Hashtag Navigation  -->
+		<% if (typeof hashtag_nav != 'undefined') { %> <%-
+		include('partials/hashtag_nav'); %> <% } %>
+
+		<!-- Main Content -->
 		<main class="content">
 			<%- contents %>
 		</main>
-		<!--  -->
+
+		<!-- Footer -->
 		<%- include('partials/footer') %>
 
 		<!-- <script src=".../assets/js/vendors.js"></script>

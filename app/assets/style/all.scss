@@ -16,6 +16,8 @@
 
 @import 'components/tabs';
 @import 'components/pagination';
+@import 'components/breadcrumb';
+@import 'components/hashtag-nav';
 @import 'components/product';
 @import 'components/store';
 
@@ -25,3 +27,4 @@
 @import 'pages/location-detail';
 @import 'pages/faq';
 @import 'pages/blog';
+@import 'pages/blog-detail';
